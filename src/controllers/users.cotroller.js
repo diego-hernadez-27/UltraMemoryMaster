@@ -29,6 +29,8 @@ usersCtrl.signin = passport.authenticate('local', {
 usersCtrl.register = async (req, res) => {
   //const errors = [];
   const {name, appe, email, username, password, roles} = req.body;
+  const score = 0;
+  const level = 0;
   /*
   if(errors.length > 0){
     res.render('login', {
@@ -44,10 +46,9 @@ usersCtrl.register = async (req, res) => {
     const nameUser = await User.findOne({username: username});
     if (nameUser){
       console.log('usuario repetido');
-      
       res.redirect('/login');
     }else{
-    const newUser = new User({name, appe, email, username, password});
+    const newUser = new User({name, appe, email, username, password, score, level});
     newUser.password = await newUser.encryptPassword(password);
 
     if(roles) {
@@ -61,11 +62,11 @@ usersCtrl.register = async (req, res) => {
     const savedUser = await newUser.save();
     console.log(savedUser)
 
-    const token = jwt.sign({id: savedUser._id}, `${SECRET}`, {
+    /*const token = jwt.sign({id: savedUser._id}, `${SECRET}`, {
       expiresIn: 86400
     })
 
-    console.log({token});
+    console.log({token});*/
 
     //Escribir un mensaje de registro satisfactorio, porfas de usuario
     console.log('registro satisfactorio');
