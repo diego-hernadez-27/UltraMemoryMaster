@@ -1,0 +1,33 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+    background:linear-gradient(to right, #ffffff, hsl(170, 44%, 67%));
+}
+h1 {
+    text-align: center;
+}
+#miCanvas {
+    border: groove 2px red;
+    background: black;
+    box-shadow: 10px 10px 10px #888888;
+}
+.botonesMover{
+    color: #ffffff;
+    background-color: #006df1;
+    border-radius: 10px;
+    height: 30px;
+    width: 25%;
+    margin: 1%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.botonDisparo{
+    color: #ffffff;
+    background-color: #ae0000;
+    border-radius: 10px;
+    height: 30px;
+    width: 42%;
+    margin: 1%;
+    font-size: 14px;
+    font-weight: bold;
+}

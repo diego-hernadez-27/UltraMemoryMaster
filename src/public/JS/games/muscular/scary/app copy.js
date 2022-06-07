@@ -1,4 +1,4 @@
-const wordsArray = ['MESA','SILLA','VENTANA','COMPTADORA','HUMANIDAD','PERSONA','MUJER','BEBE','NIÑO','ADOLECENTE','CABALLERO','INDIVIDUO','CUERPO','PIERNA','PIE','TALON','MUSLO','BOCA','OJOS','CABELLO','OREJA','CEREBRO','CORAZON','MENTE','SALUD','ENFERMEDAD','FAMILIA','AMIGOS','PAREJA','AMOR','CRIATURA','NATURALEZA'];
+const wordsArray = ['MESERP','SILLON','VENTANAS','COMPUTADORA','HUMANIDAD','PERSONA','NIÑERA','ADOLECENTE','CABALLERO','INDIVIDUO','CUERPO','PIERNA','PIE','TALON','MUSLO','BOCA','OJOS','CABELLO','OREJA','CEREBRO','CORAZON','MENTE','SALUD','ENFERMEDAD','FAMILIA','AMIGOS','PAREJA','AMOR','CRIATURA','NATURALEZA'];
 
 const canvas = document.querySelector('canvas'); //traer el canvas del html
 const c = canvas.getContext('2d');               //declarar el canvas en 2d
@@ -147,8 +147,8 @@ function spawnEnemy() {
         
         const angle = Math.atan2(canvas.height / 2 - y, canvas.width / 2 - x)
         const velocity = {
-            x: Math.cos(angle) * 0.5,
-            y: Math.sin(angle) * 0.5
+            x: Math.cos(angle) * 0.7,
+            y: Math.sin(angle) * 0.7
         }
         let integerRandom = Math.floor(Math.random()* wordsArray.length);
         let parabraRandom = wordsArray[integerRandom];

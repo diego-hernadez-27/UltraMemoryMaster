@@ -64,18 +64,29 @@ gamesCtrl.renderHexDificil = ('/games/muscular/Hexamano/hexdificil', (req, res) 
   res.render('games/muscular/Hexamano/hexdificil')
 });
 
-gamesCtrl.renderscaryfacil = ('/games/muscular/Sacry/scaryfacil', (req, res) => {
-  res.render('/games/muscular/Sacry/scaryfacil')
+gamesCtrl.rendercarybajo = ('/games/muscular/Sacry/scaryfacil', (req, res) => {
+  res.render('games/muscular/Sacry/scaryfacil')
 });
 
-gamesCtrl.renderscarymedio = ('/games/muscular/Sacry/scarymedio', (req, res) => {
-  res.render('/games/muscular/Sacry/scarymedio')
+gamesCtrl.rendercarymedio = ('/games/muscular/Sacry/scarymedio', (req, res) => {
+  res.render('games/muscular/Sacry/scarymedio')
 });
 
-gamesCtrl.renderscarydificil = ('/games/muscular/Sacry/scarydificil', (req, res) => {
-  res.render('/games/muscular/Sacry/scarydificil')
+gamesCtrl.rendercarydificil = ('/games/muscular/Sacry/scarydificil', (req, res) => {
+  res.render('games/muscular/Sacry/scarydificil')
 });
 
+gamesCtrl.rendervelofacil = ('/games/muscular/test/testfacil', (req, res) => {
+  res.render('games/muscular/test/testfacil')
+});
+
+gamesCtrl.rendervelomedio = ('/games/muscular/test/testmedio', (req, res) => {
+  res.render('games/muscular/test/testmedio')
+}); 
+
+gamesCtrl.rendervelodificil = ('/games/muscular/test/testdificil', (req, res) => {
+  res.render('games/muscular/test/testdificil')
+}); 
 
 gamesCtrl.renderSimonBajo = ('/games/visual/Simon/simonbajo', (req, res) => {
   res.render('games/visual/Simon/simonbajo')
@@ -87,6 +98,10 @@ gamesCtrl.renderSimonMedio = ('/games/visual/Simon/simonmedio', (req, res) => {
 
 gamesCtrl.renderSimonDificil = ('/games/visual/Simon/simondificil', (req, res) => {
   res.render('games/visual/Simon/simondificil')
+});
+
+gamesCtrl.rendergalaxia= ('/games/Estresado/Galaxy attack/Galaxy attack/canvasInvader', (req, res) => {
+  res.render('/games/Estresado/Galaxy attack/Galaxy attack/canvasInvader')
 });
 
 module.exports = gamesCtrl;

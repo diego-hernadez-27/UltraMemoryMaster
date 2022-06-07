@@ -7,11 +7,21 @@
         <title>Memorama con JavaScript, Bootstrap y Vue.JS</title>
         <link href="/CSS/games/auditiva/bootstrap.min.css" rel="stylesheet">
         <link href="/CSS/games/auditiva/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/CSS/niveles.css">
 
      <main role="main" class="container-fluid" id="app">
+         <nav>
+        <h1>Memorama</h1>
+        <div class="nav__list">
+            <a href="/nivelesecoica">
+                <i class='bx bx-left-arrow-alt'></i>
+                Volver
+            </a>
+        </div>
+    </nav>
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center">Juego de memorama</h1>
+                   
                     <p>
                         <span class="h5">Intentos: </span>
                         {{intentos}}/{{MAXIMOS_INTENTOS}}&nbsp;<span class="h5">Aciertos:
@@ -34,6 +44,7 @@
                 </div>
             </div>
         </main>
+     
 
         <div class="burbujas">
             <div class="burbuja"></div>
@@ -47,8 +58,8 @@
             <div class="burbuja"></div>
             <div class="burbuja"></div>
         </div>
-
-        <script src="/JS/games/auditiva/memorama/sweetalert2.all.min.js"></script>
-        <script src="/JS/games/auditiva/memorama/vue.min.js"></script>
-        <script src="/JS/games/auditiva/memorama/script.js"></script>
+        <script src="/JS/games/auditiva/memorama/medio/js/sweetalert2.all.min.js"></script>
+        <script src="/JS/games/auditiva/memorama/medio/js/vue.min.js"></script>
+        <script src="/JS/games/auditiva/memorama/medio/js/script.js"></script>
+        
     </header>

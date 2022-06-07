@@ -3,7 +3,9 @@ const router = Router();
 
 const { renderRutbajo, renderRutmedio, renderRutdificil, renderCodMensajes, renderInverBajo, renderInverMedio,
 renderInverAlto, renderSodBajo, renderSodMedio, renderSodAlto, renderHexBajo, renderHexMedio, renderHexDificil,
-renderSimonBajo, renderSimonMedio, renderSimonDificil, rendermemoramafacil, rendermemoramamedio, rendermemoramadificil, renderscaryfacil, renderscarymedio, renderscarydificil} = require('../controllers/games.controller')
+renderSimonBajo, renderSimonMedio, renderSimonDificil, rendermemoramafacil, rendermemoramamedio, 
+rendermemoramadificil, rendercarybajo, rendercarymedio, rendercarydificil, rendervelofacil, 
+rendervelomedio, rendervelodificil, rendergalaxia} = require('../controllers/games.controller')
 
 const { isAuthenticated } = require('../helpers/auth');
 
@@ -39,16 +41,24 @@ router.get('/games/muscular/Hexamano/hexmedio', isAuthenticated, renderHexMedio)
 
 router.get('/games/muscular/Hexamano/hexdificil', isAuthenticated, renderHexDificil);
 
-router.get('/games/muscular/Sacry/scaryfacil', isAuthenticated, renderscaryfacil);
+router.get('/games/muscular/Sacry/scaryfacil' , isAuthenticated, rendercarybajo);
 
-router.get('/games/muscular/Sacry/scarymedio', isAuthenticated, renderscarymedio);
+router.get('/games/muscular/Sacry/scarymedio', isAuthenticated, rendercarymedio);
 
-router.get('/games/muscular/Sacry/scarydificil', isAuthenticated, renderscarydificil);
+router.get('/games/muscular/Sacry/scarydificil', isAuthenticated, rendercarydificil);
+
+router.get('/games/muscular/test/testfacil', isAuthenticated, rendervelofacil);
+
+router.get('/games/muscular/test/testmedio', isAuthenticated, rendervelomedio);
+
+router.get('/games/muscular/test/testdificil', isAuthenticated, rendervelodificil);
 
 router.get('/games/visual/Simon/simonbajo', isAuthenticated, renderSimonBajo);
 
 router.get('/games/visual/Simon/simonmedio', isAuthenticated, renderSimonMedio);
 
 router.get('/games/visual/Simon/simondificil', isAuthenticated, renderSimonDificil);
+
+router.get('/games/estresado/canvasInvader', isAuthenticated, rendergalaxia);
 
 module.exports = router;
